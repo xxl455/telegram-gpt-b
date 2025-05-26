@@ -1,1 +1,23 @@
-# telegram-gpt-bot  កកកិកក្កក្កកកិកកក្កកកកកកិកកកៀកកកកកកកកកិកកកកកកកកកកកកកកកកិកកកកកកកិកកកកកកកកកិក are  I§i¶i;  Render  3.  ## ## ## ## ##  T§a„ḍ…  ṭṭṭ - `requirements.txt`: ṭṭṭṭṭ… က့ပိ့်…ပိ့်ပ့် - `Procfile`: က့ကပ့်± Render  Ƒ ٹ ٹ ٹ ´ ´  =  os.getenv("OPENAI_API_KEY") TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN") async def start(update: Update, context: ContextTypes.DEFAULT_TYPE): await update.message.reply_text("…mmm!"  Tṭṭṭṭ  "កកកិកក្កក្កក្កក្កក្កកក្កកកកកកិកកកកកកកកកិកកកកកកកកកកកកិកកកកក  model="gpt-3.5-turbo", messages=[{"role": "user", "content": user_message}] ) reply = response.choices[0].message.content await update.message.reply_text(reply) except Exception as e: await update.message.reply_text("Mmm« M®mm: " + str(e)) if __name__ ==  "__main__":app=  ApplicationBuilder().token(TELEGRAM_TOKEN).build() app.add_handler(CommandHandler("start", start)) app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message)) app.run_polling() ``` --- ### `requirements.txt` ```  python-telegram-bot==20.3 openai ``` --- ### `Procfile` ``` web: python main.py ```
+# AlMolaBot - Telegram GPT Bot
+
+مرحبًا بكم في **AlMolaBot**، البوت التعليمي الذكي الخاص بمدرسة متوسطة ابن ماجة.
+
+يهدف هذا البوت إلى:
+- مساعدة الطلاب في حل الواجبات المدرسية.
+- الإجابة على الأسئلة العامة.
+- تلخيص الدروس وتقديم شرح مبسط.
+- التفاعل مع الأسئلة باللغة العربية بشكل ذكي.
+
+## طريقة التشغيل
+
+1. انسخ التوكن الخاص بالبوت من BotFather.
+2. اربطه مع ملف التشغيل `bot.py`.
+3. ارفع المشروع إلى أي خادم أو استخدم خدمة مثل Replit أو Render لتشغيل البوت.
+
+## ملاحظات
+
+يرجى عدم مشاركة التوكن علنًا، لأنه يمكن استخدامه للتحكم الكامل في البوت.
+
+---
+
+تم إعداد هذا المشروع ليكون مساعدًا شخصيًا للطلاب والمعلمين في بيئة آمنة وسهلة الاستخدام.
